@@ -1,0 +1,55 @@
+html {
+  font-family: 'Maiden+Orange', sans-serif;
+}
+
+form {
+  width: 100%;
+  max-width: 458px;
+  text-align: center;
+  border: solid 3px #c2c2c2;
+  padding-bottom: 15px;
+  margin: 8% auto;
+  background: #e1e1e1;
+}
+
+h3 {
+  width: 75%;
+  background-color: #CD5C5C;
+  padding: 3px 0px;
+  margin: 5% auto;
+  border-bottom: solid #cac8c8 .2rem;
+}
+
+input[type=textfield] {
+  width: 69%;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 8px 0;
+  border: 1px solid silver;
+  border-radius: 1px;
+  text-align: left;
+  color: #333;
+  background: #999999;
+  border-bottom: solid #cac8c8 .2rem;
+  font-weight: bolder;
+
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #CD5C5C;
+  border: solid 3px #c2c2c2;
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  min-width: 15%;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-bottom: solid #cac8c8 .2rem;
+
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #333;
+
+}

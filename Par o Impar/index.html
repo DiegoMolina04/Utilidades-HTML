@@ -1,0 +1,100 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet"
+    	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+	<script>
+		function parImpar()
+
+		{
+
+			if (document.getElementById("valor").value === ''){
+				document.getElementById("resultado").innerHTML = 'Error ! Ingrese un valor númerico'
+			}else {
+
+			var valor = parseInt(document.getElementById("valor").value);
+			var tipo = (valor % 2) ? "Impar" : "Par";
+			document.getElementById("resultado").innerHTML = "El Número " + valor + " Es " + tipo;
+			return false;
+			}
+
+
+		}
+
+		function borrar() {
+			document.getElementById("resultado").innerHTML = "";
+		}
+	</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href=" ">Todas Las Paginas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Pagina Principal</a>
+                  </li>
+                  <li class="nav-item dropleft">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Paginas Web
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="../Calculadora/index.html">Calculadora</a>
+                      <a class="dropdown-item" href="index.html">Par O Impar</a>
+                      <a class="dropdown-item" href="../Post it/index.html">Post It</a>
+                    </div>
+                  </li>
+
+              </ul>
+        </div>
+    </nav>
+
+	<div class="cont1">
+
+		<div class="top">
+			<h4>Par O Impar</h4>
+		</div>
+		<form class="form-reg" action="">
+
+			<form>
+
+				<h3>Verificación De Par O Impar</h3>
+
+				<input class="input" type="" id="valor" value="" placeholder="Ingrese un número"  maxlength="16" required>
+
+				<br></br>
+
+				<div class="res" id="resultado"></div>
+
+				<br></br>
+				<div class="btn-form">
+					<input class="btn-submit" type="submit" onclick="return parImpar()" value="Resultado">
+					<input class="btn-reset" type="reset" onclick="return borrar()" value="Limpiar Campos">
+				</div>
+			</form>
+
+
+
+		</form>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
